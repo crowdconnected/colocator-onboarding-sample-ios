@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import UIKit
+
+class OnboardingNavigationController: UINavigationController {
+    
+    override func viewDidLoad() {
+          super.viewDidLoad()
+      }
+}

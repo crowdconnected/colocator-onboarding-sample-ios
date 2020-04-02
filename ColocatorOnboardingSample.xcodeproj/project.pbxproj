@@ -3,27 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663E3FFB0259DC2DC46497DA /* Pods_ColocatorOnboardingSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC448754454FEF3BECCD7BD1 /* Pods_ColocatorOnboardingSample.framework */; };
 		AA0B1E0B2434AEA100B8DE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E0A2434AEA100B8DE7C /* AppDelegate.swift */; };
 		AA0B1E0D2434AEA100B8DE7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E0C2434AEA100B8DE7C /* SceneDelegate.swift */; };
-		AA0B1E0F2434AEA100B8DE7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E0E2434AEA100B8DE7C /* ViewController.swift */; };
+		AA0B1E0F2434AEA100B8DE7C /* ColocatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E0E2434AEA100B8DE7C /* ColocatorViewController.swift */; };
 		AA0B1E122434AEA100B8DE7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0B1E102434AEA100B8DE7C /* Main.storyboard */; };
 		AA0B1E142434AEA300B8DE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0B1E132434AEA300B8DE7C /* Assets.xcassets */; };
 		AA0B1E172434AEA300B8DE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0B1E152434AEA300B8DE7C /* LaunchScreen.storyboard */; };
+		AA0B1E1F2434B3A800B8DE7C /* ChoosingEventTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E1E2434B3A800B8DE7C /* ChoosingEventTypeViewController.swift */; };
+		AA0B1E232434BAEA00B8DE7C /* LocationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E222434BAEA00B8DE7C /* LocationPermissionViewController.swift */; };
+		AA0B1E252434BB0500B8DE7C /* MotionPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E242434BB0500B8DE7C /* MotionPermissionViewController.swift */; };
+		AA0B1E272434BB1E00B8DE7C /* BluetoothPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E262434BB1E00B8DE7C /* BluetoothPermissionViewController.swift */; };
+		AA0B1E292434BB6B00B8DE7C /* NotificationPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E282434BB6B00B8DE7C /* NotificationPermissionViewController.swift */; };
+		AA0B1E2C2434BC9B00B8DE7C /* PrivacyPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E2B2434BC9B00B8DE7C /* PrivacyPermissionViewController.swift */; };
+		AA0B1E2E2434D37100B8DE7C /* OnboardingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E2D2434D37100B8DE7C /* OnboardingNavigationController.swift */; };
+		AA0B1E302434D40F00B8DE7C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E2F2434D40F00B8DE7C /* Constants.swift */; };
+		AA0B1E322434DA6D00B8DE7C /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E312434DA6D00B8DE7C /* AppFlowController.swift */; };
+		AA0B1E342434F07700B8DE7C /* OpenSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E332434F07700B8DE7C /* OpenSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1447CB21FED4A8590BCE5E69 /* Pods-ColocatorOnboardingSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColocatorOnboardingSample.release.xcconfig"; path = "Target Support Files/Pods-ColocatorOnboardingSample/Pods-ColocatorOnboardingSample.release.xcconfig"; sourceTree = "<group>"; };
+		27CACBF36968C601851D1F19 /* Pods-ColocatorOnboardingSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColocatorOnboardingSample.debug.xcconfig"; path = "Target Support Files/Pods-ColocatorOnboardingSample/Pods-ColocatorOnboardingSample.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0B1E072434AEA100B8DE7C /* ColocatorOnboardingSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColocatorOnboardingSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0B1E0A2434AEA100B8DE7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA0B1E0C2434AEA100B8DE7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA0B1E0E2434AEA100B8DE7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA0B1E0E2434AEA100B8DE7C /* ColocatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColocatorViewController.swift; sourceTree = "<group>"; };
 		AA0B1E112434AEA100B8DE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA0B1E132434AEA300B8DE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA0B1E162434AEA300B8DE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA0B1E182434AEA300B8DE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0B1E1E2434B3A800B8DE7C /* ChoosingEventTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosingEventTypeViewController.swift; sourceTree = "<group>"; };
+		AA0B1E222434BAEA00B8DE7C /* LocationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewController.swift; sourceTree = "<group>"; };
+		AA0B1E242434BB0500B8DE7C /* MotionPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionPermissionViewController.swift; sourceTree = "<group>"; };
+		AA0B1E262434BB1E00B8DE7C /* BluetoothPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPermissionViewController.swift; sourceTree = "<group>"; };
+		AA0B1E282434BB6B00B8DE7C /* NotificationPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionViewController.swift; sourceTree = "<group>"; };
+		AA0B1E2B2434BC9B00B8DE7C /* PrivacyPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPermissionViewController.swift; sourceTree = "<group>"; };
+		AA0B1E2D2434D37100B8DE7C /* OnboardingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationController.swift; sourceTree = "<group>"; };
+		AA0B1E2F2434D40F00B8DE7C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AA0B1E312434DA6D00B8DE7C /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
+		AA0B1E332434F07700B8DE7C /* OpenSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSettingsViewController.swift; sourceTree = "<group>"; };
+		EC448754454FEF3BECCD7BD1 /* Pods_ColocatorOnboardingSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColocatorOnboardingSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663E3FFB0259DC2DC46497DA /* Pods_ColocatorOnboardingSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08FA5A3C083EFEA232383795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC448754454FEF3BECCD7BD1 /* Pods_ColocatorOnboardingSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA0B1DFE2434AEA100B8DE7C = {
 			isa = PBXGroup;
 			children = (
 				AA0B1E092434AEA100B8DE7C /* ColocatorOnboardingSample */,
 				AA0B1E082434AEA100B8DE7C /* Products */,
+				FBE516D71B277BE6DAC7A984 /* Pods */,
+				08FA5A3C083EFEA232383795 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +93,40 @@
 			children = (
 				AA0B1E0A2434AEA100B8DE7C /* AppDelegate.swift */,
 				AA0B1E0C2434AEA100B8DE7C /* SceneDelegate.swift */,
-				AA0B1E0E2434AEA100B8DE7C /* ViewController.swift */,
-				AA0B1E102434AEA100B8DE7C /* Main.storyboard */,
-				AA0B1E132434AEA300B8DE7C /* Assets.xcassets */,
-				AA0B1E152434AEA300B8DE7C /* LaunchScreen.storyboard */,
+				AA0B1E312434DA6D00B8DE7C /* AppFlowController.swift */,
 				AA0B1E182434AEA300B8DE7C /* Info.plist */,
+				AA0B1E132434AEA300B8DE7C /* Assets.xcassets */,
+				AA0B1E0E2434AEA100B8DE7C /* ColocatorViewController.swift */,
+				AA0B1E152434AEA300B8DE7C /* LaunchScreen.storyboard */,
+				AA0B1E102434AEA100B8DE7C /* Main.storyboard */,
+				AA0B1E2A2434BB8B00B8DE7C /* Onboarding */,
+				AA0B1E2F2434D40F00B8DE7C /* Constants.swift */,
+				AA0B1E332434F07700B8DE7C /* OpenSettingsViewController.swift */,
 			);
 			path = ColocatorOnboardingSample;
+			sourceTree = "<group>";
+		};
+		AA0B1E2A2434BB8B00B8DE7C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AA0B1E2D2434D37100B8DE7C /* OnboardingNavigationController.swift */,
+				AA0B1E1E2434B3A800B8DE7C /* ChoosingEventTypeViewController.swift */,
+				AA0B1E2B2434BC9B00B8DE7C /* PrivacyPermissionViewController.swift */,
+				AA0B1E282434BB6B00B8DE7C /* NotificationPermissionViewController.swift */,
+				AA0B1E222434BAEA00B8DE7C /* LocationPermissionViewController.swift */,
+				AA0B1E242434BB0500B8DE7C /* MotionPermissionViewController.swift */,
+				AA0B1E262434BB1E00B8DE7C /* BluetoothPermissionViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FBE516D71B277BE6DAC7A984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27CACBF36968C601851D1F19 /* Pods-ColocatorOnboardingSample.debug.xcconfig */,
+				1447CB21FED4A8590BCE5E69 /* Pods-ColocatorOnboardingSample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA0B1E1B2434AEA300B8DE7C /* Build configuration list for PBXNativeTarget "ColocatorOnboardingSample" */;
 			buildPhases = (
+				B1D88E6EA4DEDC987F5B0698 /* [CP] Check Pods Manifest.lock */,
 				AA0B1E032434AEA100B8DE7C /* Sources */,
 				AA0B1E042434AEA100B8DE7C /* Frameworks */,
 				AA0B1E052434AEA100B8DE7C /* Resources */,
+				E3BEDD93FB42A9F04C3E1F13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +197,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B1D88E6EA4DEDC987F5B0698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ColocatorOnboardingSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3BEDD93FB42A9F04C3E1F13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColocatorOnboardingSample/Pods-ColocatorOnboardingSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColocatorOnboardingSample/Pods-ColocatorOnboardingSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColocatorOnboardingSample/Pods-ColocatorOnboardingSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA0B1E032434AEA100B8DE7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0B1E0F2434AEA100B8DE7C /* ViewController.swift in Sources */,
+				AA0B1E2E2434D37100B8DE7C /* OnboardingNavigationController.swift in Sources */,
+				AA0B1E302434D40F00B8DE7C /* Constants.swift in Sources */,
+				AA0B1E272434BB1E00B8DE7C /* BluetoothPermissionViewController.swift in Sources */,
+				AA0B1E322434DA6D00B8DE7C /* AppFlowController.swift in Sources */,
+				AA0B1E0F2434AEA100B8DE7C /* ColocatorViewController.swift in Sources */,
+				AA0B1E2C2434BC9B00B8DE7C /* PrivacyPermissionViewController.swift in Sources */,
+				AA0B1E252434BB0500B8DE7C /* MotionPermissionViewController.swift in Sources */,
+				AA0B1E342434F07700B8DE7C /* OpenSettingsViewController.swift in Sources */,
+				AA0B1E1F2434B3A800B8DE7C /* ChoosingEventTypeViewController.swift in Sources */,
+				AA0B1E292434BB6B00B8DE7C /* NotificationPermissionViewController.swift in Sources */,
+				AA0B1E232434BAEA00B8DE7C /* LocationPermissionViewController.swift in Sources */,
 				AA0B1E0B2434AEA100B8DE7C /* AppDelegate.swift in Sources */,
 				AA0B1E0D2434AEA100B8DE7C /* SceneDelegate.swift in Sources */,
 			);
@@ -282,11 +398,13 @@
 		};
 		AA0B1E1C2434AEA300B8DE7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27CACBF36968C601851D1F19 /* Pods-ColocatorOnboardingSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67K9GDZYLG;
 				INFOPLIST_FILE = ColocatorOnboardingSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +418,13 @@
 		};
 		AA0B1E1D2434AEA300B8DE7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1447CB21FED4A8590BCE5E69 /* Pods-ColocatorOnboardingSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67K9GDZYLG;
 				INFOPLIST_FILE = ColocatorOnboardingSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

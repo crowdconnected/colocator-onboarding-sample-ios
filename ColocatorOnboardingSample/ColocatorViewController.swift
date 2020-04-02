@@ -7,14 +7,25 @@
 //
 
 import UIKit
+import SwiftSpinner
 
 class ColocatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        SwiftSpinner.show("Updating data")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            SwiftSpinner.hide()
+        }
     }
 
-
+    @IBAction func actionOpenSettingsViewController(_ sender: Any) {
+        guard let openSettingsVC = storyboard?.instantiateViewController(withIdentifier: "OpenSettingsViewController") else {
+            return
+        }
+        
+        navigationController?.pushViewController(openSettingsVC, animated: true)
+    }
 }
 

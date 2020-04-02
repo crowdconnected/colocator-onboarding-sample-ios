@@ -1,0 +1,40 @@
+PODS:
+  - CCLocation (2.5.2):
+    - ReSwift (= 5.0.0)
+    - SocketRocket (= 0.4.2)
+    - SwiftProtobuf (= 1.6.0)
+    - TrueTime (= 5.0.3)
+  - IQKeyboardManagerSwift (6.5.5)
+  - ReSwift (5.0.0)
+  - SocketRocket (0.4.2)
+  - SwiftProtobuf (1.6.0)
+  - SwiftSpinner (2.1.0)
+  - TrueTime (5.0.3)
+
+DEPENDENCIES:
+  - CCLocation (~> 2.5.2)
+  - IQKeyboardManagerSwift
+  - SwiftSpinner
+
+SPEC REPOS:
+  trunk:
+    - CCLocation
+    - IQKeyboardManagerSwift
+    - ReSwift
+    - SocketRocket
+    - SwiftProtobuf
+    - SwiftSpinner
+    - TrueTime
+
+SPEC CHECKSUMS:
+  CCLocation: 49df1960b4a8e59dd469af4ba962ffca7fafe095
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+  SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
+  SwiftProtobuf: e905ca1366405696411aaf174411c4b19c0ef73d
+  SwiftSpinner: 0f15c006307f8d8bbac075638927ec1361b565d7
+  TrueTime: b49551ffafb28a9dee04e51b226f42a416010842
+
+PODFILE CHECKSUM: 8d6c239a3eb7a559f4edf19cd2f3b2b8a023a5fe
+
+COCOAPODS: 1.9.1

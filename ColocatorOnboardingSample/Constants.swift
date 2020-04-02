@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+let isUserOnboardedStorageKey = "IsUserOnboardedStorageKEY"
+let isIndoorEventStorageKey = "IsIndoorEventStorageKEY"
+
+let colocatorAppKey = "mpupi67"
