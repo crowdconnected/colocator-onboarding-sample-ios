@@ -12,8 +12,18 @@ import CCLocation
 
 class MotionPermissionViewController: UIViewController {
     
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     override func viewDidLoad() {
           super.viewDidLoad()
+        
+        let isIndoorEvent = UserDefaults.standard.value(forKey: isIndoorEventStorageKey) as? Bool ?? false
+        
+        if isIndoorEvent {
+            backgroundImage.image = UIImage(named: "indoor-dark")
+        } else {
+            backgroundImage.image = UIImage(named: "outdoor-dark")
+        }
       }
       
     @IBAction func actionAllowMotion(_ sender: Any) {

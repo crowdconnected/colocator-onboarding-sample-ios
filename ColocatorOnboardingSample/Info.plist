@@ -40,8 +40,10 @@
 		</dict>
 	</dict>
     
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Allowing us to use your Bluetooth, we can provide a better experience for indoor navigation during the event</string>
     <key>NSBluetoothPeripheralUsageDescription</key>
-    <string>We need to know whether Bluetooth is switched on</string>
+    <string>Allowing us to use your Bluetooth, we can provide a better experience for indoor navigation during the event</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
     <string>Only by now selecting “Always Allow” below can you continue to stay up to date with last-minute schedule changes, security alerts and more relevant contextual messages based on your location during the event</string>
     <key>Only by now selecting “Always Allow” below can you continue to stay up to date with last-minute schedule changes, security alerts and more relevant contextual messages based on your location during the event</key>

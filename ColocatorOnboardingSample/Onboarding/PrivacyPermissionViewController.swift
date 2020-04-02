@@ -11,8 +11,18 @@ import UIKit
 
 class PrivacyPermissionViewController: UIViewController {
     
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let isIndoorEvent = UserDefaults.standard.value(forKey: isIndoorEventStorageKey) as? Bool ?? false
+        
+        if isIndoorEvent {
+            backgroundImage.image = UIImage(named: "indoor-dark")
+        } else {
+            backgroundImage.image = UIImage(named: "outdoor-dark")
+        }
     }
     
     @IBAction func actionAccestPolicy(_ sender: Any) {

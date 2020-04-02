@@ -12,9 +12,19 @@ import CCLocation
 
 class BluetoothPermissionViewController: UIViewController {
     
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     override func viewDidLoad() {
           super.viewDidLoad()
-      }
+        
+        let isIndoorEvent = UserDefaults.standard.value(forKey: isIndoorEventStorageKey) as? Bool ?? false
+        
+        if isIndoorEvent {
+            backgroundImage.image = UIImage(named: "indoor-dark")
+        } else {
+            backgroundImage.image = UIImage(named: "outdoor-dark")
+        }
+    }
       
     @IBAction func actionAllowBluetooth(_ sender: Any) {
         CCLocation.sharedInstance.triggerBluetoothPermissionPopUp()

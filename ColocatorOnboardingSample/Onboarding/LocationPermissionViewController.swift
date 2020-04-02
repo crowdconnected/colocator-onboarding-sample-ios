@@ -12,6 +12,7 @@ import CoreLocation
 
 class LocationPermissionViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var stepsStackView: UIStackView!
     
     var locationManager: CLLocationManager?
@@ -22,7 +23,10 @@ class LocationPermissionViewController: UIViewController, CLLocationManagerDeleg
         
         let isIndoorEvent = UserDefaults.standard.value(forKey: isIndoorEventStorageKey) as? Bool ?? false
         
-        if !isIndoorEvent {
+        if isIndoorEvent {
+            backgroundImage.image = UIImage(named: "indoor-dark")
+        } else {
+            backgroundImage.image = UIImage(named: "outdoor-dark")
             stepsStackView.subviews.last?.removeFromSuperview()
             stepsStackView.subviews.last?.removeFromSuperview()
         }

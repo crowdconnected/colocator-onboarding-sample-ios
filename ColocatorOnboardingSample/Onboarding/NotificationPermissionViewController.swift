@@ -11,6 +11,7 @@ import UIKit
 
 class NotificationPermissionViewController: UIViewController {
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var stepsStackView: UIStackView!
     
     override func viewDidLoad() {
@@ -18,7 +19,10 @@ class NotificationPermissionViewController: UIViewController {
         
         let isIndoorEvent = UserDefaults.standard.value(forKey: isIndoorEventStorageKey) as? Bool ?? false
         
-        if !isIndoorEvent {
+        if isIndoorEvent {
+            backgroundImage.image = UIImage(named: "indoor-dark")
+        } else {
+            backgroundImage.image = UIImage(named: "outdoor-dark")
             stepsStackView.subviews.last?.removeFromSuperview()
             stepsStackView.subviews.last?.removeFromSuperview()
         }

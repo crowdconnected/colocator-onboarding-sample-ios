@@ -29,6 +29,7 @@ class ChoosingEventTypeViewController: UIViewController {
         guard let privacyVC = storyboard?.instantiateViewController(withIdentifier: "PrivacyPermissionViewController") else {
             return
         }
+        
         navigationController?.pushViewController(privacyVC, animated: true)
     }
 }
