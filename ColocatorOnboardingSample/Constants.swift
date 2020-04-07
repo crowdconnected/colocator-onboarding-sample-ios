@@ -10,5 +10,6 @@ import Foundation
 
 let isUserOnboardedStorageKey = "IsUserOnboardedStorageKEY"
 let isIndoorEventStorageKey = "IsIndoorEventStorageKEY"
+let hasAskedForManualPermissionKey = "HasAskedForManualPermissionKEY"
 
 let colocatorAppKey = "mpupi67"

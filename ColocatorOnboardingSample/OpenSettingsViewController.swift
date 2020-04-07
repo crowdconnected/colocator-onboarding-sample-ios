@@ -9,7 +9,13 @@
 import Foundation
 import UIKit
 
+protocol ManualPermissionDelegate {
+    func didEnablePermission()
+}
+
 class OpenSettingsViewController: UIViewController {
+    
+    public var delegate: ManualPermissionDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +23,9 @@ class OpenSettingsViewController: UIViewController {
     
     @IBAction func actionOpenSettings(_ sender: Any) {
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+        
+        delegate?.didEnablePermission()
+        UserDefaults.standard.set(true, forKey: hasAskedForManualPermissionKey)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let alert = UIAlertController(title: "Excelent", message: "You now have enabled the whole potential of your app", preferredStyle: .alert)

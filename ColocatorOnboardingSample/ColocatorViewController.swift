@@ -8,10 +8,14 @@
 
 import UIKit
 import SwiftSpinner
+import CoreLocation
 
 class ColocatorViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var manualParmissionButton: UIButton!
+    
+     var locationManager: CLLocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,9 @@ class ColocatorViewController: UIViewController {
             backgroundImage.image = UIImage(named: "outdoor-dark")
         }
         
+        let hasAskedForManualPermission = UserDefaults.standard.value(forKey: hasAskedForManualPermissionKey) as? Bool ?? false
+        manualParmissionButton.isHidden = hasAskedForManualPermission
+        
         SwiftSpinner.show("Updating data")
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             SwiftSpinner.hide()
@@ -31,11 +38,18 @@ class ColocatorViewController: UIViewController {
     }
     
     @IBAction func actionOpenSettingsViewController(_ sender: Any) {
-        guard let openSettingsVC = storyboard?.instantiateViewController(withIdentifier: "OpenSettingsViewController") else {
+        guard let openSettingsVC = storyboard?.instantiateViewController(withIdentifier: "OpenSettingsViewController")
+            as? OpenSettingsViewController else {
             return
         }
-        
+        openSettingsVC.delegate = self
+      
         navigationController?.pushViewController(openSettingsVC, animated: true)
     }
 }
 
+extension ColocatorViewController: ManualPermissionDelegate {
+    func didEnablePermission() {
+        manualParmissionButton.isHidden = true
+    }
+}
