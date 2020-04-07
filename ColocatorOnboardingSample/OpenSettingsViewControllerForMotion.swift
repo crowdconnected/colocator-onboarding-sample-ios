@@ -1,31 +1,28 @@
 //
-//  OpenSettingsViewController.swift
+//  OpenSettingsViewControllerForMotion.swift
 //  ColocatorOnboardingSample
 //
-//  Created by TCode on 01/04/2020.
+//  Created by TCode on 07/04/2020.
 //  Copyright © 2020 CrowdConnected. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-protocol ManualPermissionDelegate {
-    func didEnablePermission()
+protocol ManualMotionPermissionDelegate {
+    func didEnableMotionPermission()
 }
 
-class OpenSettingsViewController: UIViewController {
+class OpenSettingsViewControllerForMotion: UIViewController {
     
-    public var delegate: ManualPermissionDelegate?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+     public var delegate: ManualMotionPermissionDelegate?
     
     @IBAction func actionOpenSettings(_ sender: Any) {
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
         
-        delegate?.didEnablePermission()
-        UserDefaults.standard.set(true, forKey: hasAskedForManualPermissionKey)
+        delegate?.didEnableMotionPermission()
+        
+        UserDefaults.standard.set(true, forKey: hasAskedForManualMotionPermissionKey)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let alert = UIAlertController(title: "Excelent", message: "You now have enabled the whole potential of your app", preferredStyle: .alert)
@@ -39,4 +36,5 @@ class OpenSettingsViewController: UIViewController {
     @IBAction func actionCancel(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
 }

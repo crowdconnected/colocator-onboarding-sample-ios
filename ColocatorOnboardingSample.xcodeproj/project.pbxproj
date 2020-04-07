@@ -23,7 +23,8 @@
 		AA0B1E2E2434D37100B8DE7C /* OnboardingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E2D2434D37100B8DE7C /* OnboardingNavigationController.swift */; };
 		AA0B1E302434D40F00B8DE7C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E2F2434D40F00B8DE7C /* Constants.swift */; };
 		AA0B1E322434DA6D00B8DE7C /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E312434DA6D00B8DE7C /* AppFlowController.swift */; };
-		AA0B1E342434F07700B8DE7C /* OpenSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E332434F07700B8DE7C /* OpenSettingsViewController.swift */; };
+		AA0B1E342434F07700B8DE7C /* OpenSettingsViewControllerForLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B1E332434F07700B8DE7C /* OpenSettingsViewControllerForLocation.swift */; };
+		AAE37DB1243CA0E300329F85 /* OpenSettingsViewControllerForMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE37DB0243CA0E300329F85 /* OpenSettingsViewControllerForMotion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +47,8 @@
 		AA0B1E2D2434D37100B8DE7C /* OnboardingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationController.swift; sourceTree = "<group>"; };
 		AA0B1E2F2434D40F00B8DE7C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AA0B1E312434DA6D00B8DE7C /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
-		AA0B1E332434F07700B8DE7C /* OpenSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSettingsViewController.swift; sourceTree = "<group>"; };
+		AA0B1E332434F07700B8DE7C /* OpenSettingsViewControllerForLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSettingsViewControllerForLocation.swift; sourceTree = "<group>"; };
+		AAE37DB0243CA0E300329F85 /* OpenSettingsViewControllerForMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSettingsViewControllerForMotion.swift; sourceTree = "<group>"; };
 		EC448754454FEF3BECCD7BD1 /* Pods_ColocatorOnboardingSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColocatorOnboardingSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,7 +103,8 @@
 				AA0B1E102434AEA100B8DE7C /* Main.storyboard */,
 				AA0B1E2A2434BB8B00B8DE7C /* Onboarding */,
 				AA0B1E2F2434D40F00B8DE7C /* Constants.swift */,
-				AA0B1E332434F07700B8DE7C /* OpenSettingsViewController.swift */,
+				AA0B1E332434F07700B8DE7C /* OpenSettingsViewControllerForLocation.swift */,
+				AAE37DB0243CA0E300329F85 /* OpenSettingsViewControllerForMotion.swift */,
 			);
 			path = ColocatorOnboardingSample;
 			sourceTree = "<group>";
@@ -251,7 +254,8 @@
 				AA0B1E0F2434AEA100B8DE7C /* ColocatorViewController.swift in Sources */,
 				AA0B1E2C2434BC9B00B8DE7C /* PrivacyPermissionViewController.swift in Sources */,
 				AA0B1E252434BB0500B8DE7C /* MotionPermissionViewController.swift in Sources */,
-				AA0B1E342434F07700B8DE7C /* OpenSettingsViewController.swift in Sources */,
+				AAE37DB1243CA0E300329F85 /* OpenSettingsViewControllerForMotion.swift in Sources */,
+				AA0B1E342434F07700B8DE7C /* OpenSettingsViewControllerForLocation.swift in Sources */,
 				AA0B1E1F2434B3A800B8DE7C /* ChoosingEventTypeViewController.swift in Sources */,
 				AA0B1E292434BB6B00B8DE7C /* NotificationPermissionViewController.swift in Sources */,
 				AA0B1E232434BAEA00B8DE7C /* LocationPermissionViewController.swift in Sources */,
@@ -402,7 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 67K9GDZYLG;
 				INFOPLIST_FILE = ColocatorOnboardingSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -423,7 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 67K9GDZYLG;
 				INFOPLIST_FILE = ColocatorOnboardingSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

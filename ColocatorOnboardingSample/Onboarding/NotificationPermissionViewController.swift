@@ -24,7 +24,6 @@ class NotificationPermissionViewController: UIViewController {
         } else {
             backgroundImage.image = UIImage(named: "outdoor-dark")
             stepsStackView.subviews.last?.removeFromSuperview()
-            stepsStackView.subviews.last?.removeFromSuperview()
         }
     }
     

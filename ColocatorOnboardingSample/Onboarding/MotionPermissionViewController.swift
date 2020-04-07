@@ -29,20 +29,17 @@ class MotionPermissionViewController: UIViewController {
     @IBAction func actionAllowMotion(_ sender: Any) {
         CCLocation.sharedInstance.triggerMotionPermissionPopUp()
         
-        //TODO find a way to go to the next vc when user had chosen an option
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.goToNextScreen()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
+            self.finnishOnboarding()
         }
     }
     
     @IBAction func actionSkip(_ sender: Any) {
-        goToNextScreen()
+        finnishOnboarding()
     }
     
-    private func goToNextScreen() {
-          guard let bluetoothPermissionVC = storyboard?.instantiateViewController(withIdentifier: "BluetoothPermissionViewController") else {
-              return
-          }
-          navigationController?.pushViewController(bluetoothPermissionVC, animated: true)
-      }
+    private func finnishOnboarding() {
+        UserDefaults.standard.set(true, forKey: isUserOnboardedStorageKey)
+        AppFlowController.switchRootViewController()
+    }
 }

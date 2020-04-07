@@ -20,13 +20,13 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Only by now selecting “Always Allow” below can you continue to stay up to date with last-minute schedule changes, security alerts and more relevant contextual messages based on your location during the event</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Allowing us to use your Bluetooth, we can provide a better experience for indoor navigation during the event</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Allowing us to use your Bluetooth, we can provide a better experience for indoor navigation during the event</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Only by now selecting “Always Allow” below can you continue to stay up to date with last-minute schedule changes, security alerts and more relevant contextual messages based on your location during the event</string>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Only by now selecting “Always Allow” below can you continue to stay up to date with last-minute schedule changes, security alerts and more relevant contextual messages based on your location during the event</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>By selecting “Allow While Using App" below you can stay up to date with last-minute schedule changes, security alerts and more relevant contextual messages based on your location during the event</string>

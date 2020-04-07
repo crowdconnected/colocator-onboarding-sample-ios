@@ -13,7 +13,9 @@ import CoreLocation
 class ColocatorViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var manualParmissionButton: UIButton!
+    @IBOutlet weak var permissionDeniedLabel: UILabel!
+    @IBOutlet weak var manualPermissionLocationButton: UIButton!
+    @IBOutlet weak var manualPermissionMotionButton: UIButton!
     
      var locationManager: CLLocationManager?
     
@@ -28,8 +30,15 @@ class ColocatorViewController: UIViewController {
             backgroundImage.image = UIImage(named: "outdoor-dark")
         }
         
-        let hasAskedForManualPermission = UserDefaults.standard.value(forKey: hasAskedForManualPermissionKey) as? Bool ?? false
-        manualParmissionButton.isHidden = hasAskedForManualPermission
+        let hasAskedForManualLocationPermission = UserDefaults.standard.value(forKey: hasAskedForManualLocationPermissionKey) as? Bool ?? false
+        manualPermissionLocationButton.isHidden = hasAskedForManualLocationPermission
+        
+        let hasAskedForManualMotionPermission = UserDefaults.standard.value(forKey: hasAskedForManualMotionPermissionKey) as? Bool ?? false
+        manualPermissionMotionButton.isHidden = hasAskedForManualMotionPermission
+        
+        if hasAskedForManualLocationPermission && hasAskedForManualMotionPermission {
+            permissionDeniedLabel.isHidden = true
+        }
         
         SwiftSpinner.show("Updating data")
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -38,18 +47,31 @@ class ColocatorViewController: UIViewController {
     }
     
     @IBAction func actionOpenSettingsViewController(_ sender: Any) {
-        guard let openSettingsVC = storyboard?.instantiateViewController(withIdentifier: "OpenSettingsViewController")
-            as? OpenSettingsViewController else {
+        guard let openSettingsVC = storyboard?.instantiateViewController(withIdentifier: "OpenSettingsViewControllerForLocation")
+            as? OpenSettingsViewControllerForLocation else {
             return
         }
         openSettingsVC.delegate = self
       
         navigationController?.pushViewController(openSettingsVC, animated: true)
     }
+    
+    @IBAction func actionOpenMotionSettingsViewController(_ sender: Any) {
+        guard let openMotionSettingsVC = storyboard?.instantiateViewController(withIdentifier: "OpenSettingsViewControllerForMotion")
+            as? OpenSettingsViewControllerForMotion else {
+            return
+        }
+        openMotionSettingsVC.delegate = self
+        navigationController?.pushViewController(openMotionSettingsVC, animated: true)
+    }
 }
 
-extension ColocatorViewController: ManualPermissionDelegate {
-    func didEnablePermission() {
-        manualParmissionButton.isHidden = true
+extension ColocatorViewController: ManualLocationPermissionDelegate, ManualMotionPermissionDelegate {
+    func didEnableMotionPermission() {
+        manualPermissionMotionButton.isHidden = true
+    }
+    
+    func didEnableLocationPermission() {
+        manualPermissionLocationButton.isHidden = true
     }
 }
